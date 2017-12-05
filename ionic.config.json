@@ -1,5 +1,6 @@
 {
-  "name": "Gas Monitor App",
+  "name": "Gas Monitoring App",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {}
 }

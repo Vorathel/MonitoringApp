@@ -1,0 +1,53 @@
+<ion-menu [content]="pageContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title> </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item [navPush]="'AliceExperimentPage'">
+        ALICE
+      </button>
+      <button menuClose ion-item [navPush]="'AtlasExperimentPage'">
+        ATLAS
+      </button>
+      <button menuClose ion-item [navPush]="'CmsExperimentPage'">
+        CMS
+      </button>
+      <button menuClose ion-item [navPush]="'LhCbExperimentPage'">
+        LHCb
+      </button>
+      <button menuClose ion-item color="dark">Schließen ohne Befehl</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-navbar>
+    
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Gas Monitoring App
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content #pageContent padding>
+  <p>New Gas Monitoring App </p>
+  <p>Version 0.0.1</p>
+
+  <p>
+    {{menuBefehl}}
+  </p>
+  <!-- <p>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <button ion-button (click)="menuBefehl=''">Sequenz löschen</button>
+  </p> -->
+</ion-content>

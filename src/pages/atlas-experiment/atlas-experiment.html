@@ -1,0 +1,57 @@
+<!--
+  Generated template for the AtlasExperimentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-menu [content]="pageContent">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>ATLAS</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content>
+        <ion-list>
+          <button menuClose ion-item [navPush]="'AliceExperimentPage'">
+            ALICE
+          </button>
+          <button menuClose ion-item [navPush]="'AtlasExperimentPage'">
+            ATLAS
+          </button>
+          <button menuClose ion-item [navPush]="'CmsExperimentPage'">
+            CMS
+          </button>
+          <button menuClose ion-item [navPush]="'LhCbExperimentPage'">
+            LHCb
+          </button>
+          <button menuClose ion-item color="dark">Schließen ohne Befehl</button>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  
+  <ion-header>
+    <ion-navbar>
+      
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        ATLAS
+      </ion-title>
+      
+      <ion-buttons right>
+          <button ion-button icon-only (click)="navCtrl.setRoot('ExperimentsNavigationPage');" title="Homepage" >
+            <ion-icon name="home"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content #pageContent padding>
+    <p>ATLAS Test</p>
+  
+    <p>
+     
+    </p>
+  </ion-content>
